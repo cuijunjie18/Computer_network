@@ -47,6 +47,8 @@ void send_file(int socket, const std::string& filePath) {
     auto file_size = file.tellg();
     file.seekg(0, std::ios::beg);
 
+    std::cout << file_size << "\n";
+
     // 3. 构建HTTP响应头
     std::string header = 
         "HTTP/1.1 200 OK\r\n"
@@ -138,6 +140,8 @@ int main(int argc,char *argv[])
 
     while (true) {
         int recv_length = recv(connect_socket, recv_buf, MAXN, 0);
+        recv_buf[recv_length] = '\0';
+        printf("%s\n",recv_buf);
         if (recv_length > 0){
             filePath = parse_http_request(recv_buf,recv_length);
             if (fileExists(filePath)){

@@ -15,6 +15,11 @@ add_executable(
 )
 
 add_executable(
+    web_client
+    ${PROJECT_SOURCE_DIR}/src/web_client.cpp
+)
+
+add_executable(
     debug
     ${PROJECT_SOURCE_DIR}/src/debug.cpp
 )
