@@ -3,4 +3,5 @@
 ## Finish status
 
 - [x] A simple client/server simple socket program.
-- [x] Webserver.
+- [x] Webserver Lab.
+- [x] Pinger UDP Pinger Lab.
