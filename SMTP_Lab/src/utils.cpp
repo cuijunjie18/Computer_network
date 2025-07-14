@@ -57,7 +57,7 @@ in_addr parse_domain_name(char *domain_name){
     char ip[1024];
     for (p = listp; p != nullptr; p = p->ai_next){
         sockp = (sockaddr_in *) p->ai_addr;
-        inet_ntop(p->ai_family, sockp, ip, p->ai_addrlen);
+        // inet_ntop(p->ai_family, &sockp->sin_addr, ip, p->ai_addrlen); // 去掉即可，只需要sockp即可
         break;
     }
     return sockp->sin_addr;

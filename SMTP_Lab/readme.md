@@ -76,3 +76,9 @@
   )
   ```
   参考文章： https://www.cnblogs.com/music-liang/p/17980514
+
+- 注意inet_ntop()的使用
+  ```cpp
+  inet_ntop(p->ai_family, &sockp->sin_addr, ip, p->ai_addrlen);
+  ```
+  其中第二个参数要指定到sin_addr,ip才会被正确解析为可表达的字符串值.
