@@ -181,9 +181,9 @@ int send_email_ssl(SSL* ssl){
     char recv_buf[MAXN];
     int bytes_recv = 0;
     std::string response;
-    std::string sender = "2871843852@qq.com";
-    std::string passwd = "exmojhygmmjgdcjd";
-    std::string receiver = "2293393766@qq.com";
+    std::string sender = "Your e-mail address";
+    std::string passwd = "Your passwd";
+    std::string receiver = "receiver e-mail address";
 
     // auth login
     std::string auth_message = "auth login\r\n";
