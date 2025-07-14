@@ -5,4 +5,4 @@
 - [x] A simple client/server simple socket program.
 - [x] Webserver Lab.
 - [x] Pinger UDP Pinger Lab.
-- [ ] SMTP Lab. 
+- [x] SMTP Lab. 
