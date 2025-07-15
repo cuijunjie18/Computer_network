@@ -6,3 +6,4 @@
 - [x] Webserver Lab.
 - [x] Pinger UDP Pinger Lab.
 - [x] SMTP Lab. 
+- [ ] HTTP Web Proxy Server Lab.
